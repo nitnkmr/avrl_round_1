@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header"><h3>Nitin Kumar Weather App</h3></header>
+        <div class="mainBody">
+            <div class="left">
+                <button class="button" onclick="getWather()">Get Weather</button>
+                <div class="cities">
+                    <div class="city">City</div>
+                    <div class="sec1" id="london">London</div>
+                    <div class="sec1" id="newyork">New York</div>
+                    <div class="sec1" id="losAngelas">Los Angeles</div>
+                    <div class="sec1" id="lasVegas">Las Vegas</div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <input type="search" name="" id="searchbar">
+                    <button onclick="handleSearch()">Search</button>
+                </div>
+                <div class="table">
+                    <div class="tableHeader">
+                        <div class="tableHead">City</div>
+                        <div class="tableHead">Description</div>
+                        <div class="tableHead">Temprature(C)</div>
+                        <div class="tableHead">Pressure (hPa)</div>
+                        <div class="tableHead">Data age(hrs)</div>
+                        <div class="tableHead"></div>
+                    </div>
+                    <div class="tableDescription" id="table" >
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
